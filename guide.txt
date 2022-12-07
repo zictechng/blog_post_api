@@ -1,0 +1,81 @@
+Blog post api development
+
+||
+
+
+open terminal, cd to the api folder and install all the 
+liberary needed for the project
+
+-- install
+npm init
+express: for server and manage mongodb, 
+mongoose: for database
+dotenv: for securing database connection details and other
+sensitive details you want to hide for other people not to reach it.
+
+multer: for ability to upload images in your project via
+nodejs api
+
+db
+
+-- create a file to holde all the project connection
+index or app.js, then write all the connection code there.
+
+You need to inilitialized your application to have some main package to start
+npm init, just follow all the steps that it will display and finish it up
+
+-- start your application
+open the package.json file and go to script section then write
+"start": "node index.js"  this will enable your app to start
+
+-- server auto load/start
+You need to install nodemon to keep your server up and running
+without restarting the server every time.
+
+npm install nodemon
+
+Then change "node index.js" to "nodemon index.js"
+
+-- create a file .env and put your db link in there.
+create it inside the main folder directory
+
+Then call it inside your index.js file where you are doing
+all connections
+
+-- Inside the root folder, create other folders for project organization
+models
+routes
+
+-- inside the models, create files like user.js, post.js etc..
+
+-- Inside the routes folder, create the routes for your project
+"users.js, posts.js, categories.js etc...
+
+-- Go inside the model folder, select any of the models files and write the userSchema code
+to create user details
+
+-- Go to the routes folder, auth.js and write the code for the 
+login, register etc..
+
+-- secure your password in your application with a package
+Install bcrypt
+
+npm install bcrypt
+
+-- create user, post, category ...
+
+To upload image, use multer
+npm install multer
+You can still use other method like firebase, amason etc...
+but for basic practice we can use multer
+
+-- create folder inside your project to store uploaded files
+in the index.js write the file upload code
+
+
+
+
+
+
+
+
